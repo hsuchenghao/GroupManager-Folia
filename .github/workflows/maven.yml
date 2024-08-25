@@ -19,6 +19,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '21'
+        distribution: 'zulu' # 可以根据需要选择 'adopt', 'temurin', 'zulu', 等等
 
     - name: Build with Maven
       run: mvn package
